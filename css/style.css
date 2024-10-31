@@ -1,0 +1,59 @@
+/* Remove default bullets */
+.pttax_debug_ul {
+  list-style-type: none;
+  font-family: monospace;
+}
+
+/* Remove margins and padding from the parent ul */
+.pttax_debug_mainul {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+/* Style the caret/arrow */
+.pttax_debug_caret {
+  cursor: pointer; 
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.pttax_debug_caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.pttax_debug_caret-down::before {
+  transform: rotate(90deg); 
+}
+
+/* Hide the nested list */
+.pttax_debug_nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.pttax_debug_active {
+  display: block;
+}
+
+.pttax_debug_wrap ul {
+    list-style: none;
+    margin-left:20px;
+}
+
+.pttax_debug_wrap ul li {
+    margin: 0px;
+}
+
+/* compatibility to WP4.0 */
+.pttax_debug_poststuff h2 {
+	font-size:110%;
+	padding-left: 12px;
+	font-weight:600;
+}
+
+
